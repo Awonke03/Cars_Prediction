@@ -1,11 +1,8 @@
 dash==2.15.0
 dash-bootstrap-components==1.0.1
-dash-html-components==2.1.0
-dash-renderer==2.1.0
-dash-table==5.0.0
-Flask==2.0.2
-plotly==5.3.1
-gunicorn==20.1.0
+dash-table
+plotly
+gunicorn
 pandas
 matplotlib
 seaborn
