@@ -18,6 +18,7 @@ from dash.dependencies import Input, Output, State
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import seaborn as sns
+from jupyter_dash import JupyterDash
 
 
 # In[531]:
@@ -243,7 +244,7 @@ visualizations_layout = html.Div([
 # In[546]:
 
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
+app = JupyterDash(__name__, external_stylesheets=[dbc.themes.SLATE], suppress_callback_exceptions=True)
 app.title = 'Get a good car'
 
 
