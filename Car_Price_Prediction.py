@@ -21,9 +21,10 @@ import seaborn as sns
 
 
 # In[531]:
+url = "https://raw.githubusercontent.com/Awonke03/Cars_Prediction/4b18890d6645b97c3caafe73489c4e226f58a3a6/car%20data.csv"
 
-
-cars = pd.read_csv("C:\\Users\\Admin\\Desktop\\Programming\\python\\Car Prediction\\car data.csv")
+# Read CSV into Pandas DataFrame
+cars= pd.read_csv(url)
 cars.sample(20)
 
 
