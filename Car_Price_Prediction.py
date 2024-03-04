@@ -403,6 +403,7 @@ def display_page(pathname):
         return interactive_search_layout
 
 # Callback to update the data table based on dropdown selections
+# Callback to update the data table based on dropdown selections
 @app.callback(
     [Output('datatable', 'data'),
      Output('search_dropdown', 'value'),
@@ -427,6 +428,10 @@ def update_table(search_clicks, reset_clicks, column_name, search_term):
         elif button_id == 'reset_button':
             # Handle reset button click
             return cars.to_dict('records'), None, None
+        else:
+            # Handle other button clicks
+            return dash.no_update, dash.no_update, dash.no_update
+
 
 # Add CSS to apply hover effect
 app.css.append_css({
