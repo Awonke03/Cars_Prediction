@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[22]:
-
-
 import pandas as pd
 import dash
 import dash_core_components as dcc
@@ -28,6 +22,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import mean_squared_error
 import pickle
 from sklearn.model_selection import GridSearchCV
+from dash_table.Format import Group
 
 
 # In[23]:
