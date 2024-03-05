@@ -32,8 +32,11 @@ from sklearn.model_selection import GridSearchCV
 
 # In[23]:
 
+# Replace the URL with the raw GitHub URL if needed
+url = "https://raw.githubusercontent.com/Awonke03/Cars_Prediction/90aacff7219a6e1983586d438cd8ef650084523b/car%20data.csv"
 
-cars = pd.read_csv("C:\\Users\\Admin\\Desktop\\Programming\\python\\Car Prediction\\car data.csv")
+# Load the dataset into a DataFrame
+cars = pd.read_csv(url)
 cars.sample(20)
 
 
