@@ -64,6 +64,7 @@ cars.info()
 
 app = JupyterDash(__name__, external_stylesheets=[dbc.themes.SLATE], suppress_callback_exceptions=True)
 app.title = 'Get a good car'
+server - app.server
 
 
 # In[29]:
