@@ -18,3 +18,4 @@ dash-renderer
 xlrd
 openpyxl
 Flask
+scikit-learn
