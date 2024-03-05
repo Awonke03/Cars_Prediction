@@ -626,6 +626,7 @@ app.css.append_css({
         'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
     )
 })
+app=app.server
 if __name__ == "__main__":
-    app.run_server(debug=True, port=8020)
+    app.run_server(host='0.0.0.0',debug=True, port=8020)
 
