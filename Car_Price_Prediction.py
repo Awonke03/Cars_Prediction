@@ -390,18 +390,12 @@ accuracy_fig.show()
 
 
 # Load the Random Forest model
-github_model_url = "https://raw.githubusercontent.com/Awonke03/Cars_Prediction/5671178a93e2a928063f0b9b4e5c9540d9bafbe5/Random%20Forest_model.pkl"
+github_model_url = "https://github.com/Awonke03/Cars_Prediction/raw/5671178a93e2a928063f0b9b4e5c9540d9bafbe5/Random%20Forest_model.pkl"
 
-# Download the pickled model
-response = requests.get(github_model_url)
-
-# Check if the download was successful
-if response.status_code == 200:
+# Open the URL and read the content
+with urllib.request.urlopen(github_model_url) as f:
     # Load the pickled model
-    model = pickle.loads(response.content)
-    print("Model loaded successfully.")
-else:
-    print("Failed to download the model.")
+    model = pickle.load(f)
 
 # Define the layout
 prediction_screen_layout = dbc.Container([
